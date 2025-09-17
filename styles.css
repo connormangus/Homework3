@@ -1,0 +1,63 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 400px auto;
+    row-gap: 20px;
+    grid-template-columns: 200px auto;
+    column-gap: 5px;
+    grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer"
+    ;
+}
+
+div{
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    font-size: 32px;
+    color: darkred;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar a {
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.main-content {
+    grid-area: main;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 24px;
+    color: darkblue;
+    text-align: center;
+}
+
+section {
+      height: 50vh; /* Each section takes full viewport height */
+      border-bottom: 1px solid #ccc;
+    }
